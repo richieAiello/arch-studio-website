@@ -3,7 +3,7 @@ const Hamburger = props => {
     <button
       type="button"
       className={`
-        hamburger relative cursor-pointer h-4 w-5 z-50
+        hamburger relative cursor-pointer h-4 w-5
         ${props.className}
         md:hidden
       `}

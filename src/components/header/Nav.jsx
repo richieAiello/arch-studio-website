@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react';
 import Hamburger from './Hamburger';
+import NavMenu from './NavMenu';
+import NavShadow from './NavShadow';
 import clsx from 'clsx';
 
 const Nav = props => {
@@ -12,10 +14,8 @@ const Nav = props => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-
       animateIn && setAnimateIn(false);
       animateOut && setAnimateOut(false);
-
       !menuVisibility && setHidden(true);
     }, 400);
 
@@ -29,14 +29,14 @@ const Nav = props => {
     menuVisibility ? setAnimateOut(true) : setAnimateIn(true);
   };
 
-  // const handleLinkClick = e => {
-  //   if (window.innerWidth < 768) {
-  //     handleHamburgerClick();
-  //   }
-  // };
+  const handleLinkClick = e => {
+    if (window.innerWidth < 768) {
+      handleHamburgerClick();
+    }
+  };
 
   return (
-    <nav className="container relative flex justify-between items-center bg-red-400">
+    <nav className="container flex justify-between items-center">
       <img
         src="./logo.svg"
         alt="Arch Studio Logo"
@@ -48,6 +48,24 @@ const Nav = props => {
         })}
         onClick={handleHamburgerClick}
         disabled={loading}
+      />
+      <NavMenu
+        className={clsx({
+          hidden: hidden,
+          grid: !hidden,
+          'slide-in': animateIn,
+          'slide-out': animateOut,
+        })}
+        onClick={handleLinkClick}
+      />
+      <NavShadow
+        className={clsx({
+          hidden: hidden,
+          block: !hidden,
+          'fade-in': animateIn,
+          'fade-out': animateOut,
+        })}
+        onClick={handleHamburgerClick}
       />
     </nav>
   );
