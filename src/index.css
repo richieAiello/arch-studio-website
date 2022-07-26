@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/***********************************************
+  Reset and Scrollbar
+***********************************************/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/***********************************************
+  Base Styles
+***********************************************/
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.body {
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+}
+
+.container {
+  margin-inline: auto;
+  width: min(100% - 4rem, 689px);
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1440px) {
+  .container {
+    margin-inline: auto;
+    width: 1110px;
+  }
+}
