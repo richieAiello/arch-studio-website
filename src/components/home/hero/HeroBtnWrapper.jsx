@@ -4,7 +4,7 @@ import { forwardRef } from 'react';
 const HeroBtnWrapper = (props, ref) => {
   return (
     <div
-      className="flex absolute -bottom-7 left-0 w-max h-max lg:-left-20"
+      className="flex absolute -bottom-7 left-0 w-max h-max md:-left-7 lg:-left-20 lg:bottom-0"
       ref={ref}
     >
       <HeroBtn

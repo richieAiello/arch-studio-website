@@ -32,23 +32,26 @@
   width: min(100% - 4rem, 689px);
 }
 
+.container--small {
+  margin-inline: auto;
+  width: min(100%, 500px);
+}
+
 @media (min-width: 768px) {
+  .container--small {
+    width: 689px;
+  }
 }
 
 @media (min-width: 1440px) {
-  .container {
-    margin-inline: auto;
+  .container,
+  .container--small {
     width: 1110px;
   }
 }
 
 .active {
   text-decoration: underline;
-}
-
-.current-btn {
-  background-color: #1b1d23 !important;
-  color: #fff !important;
 }
 
 .text-shadow {

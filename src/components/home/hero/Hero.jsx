@@ -24,8 +24,8 @@ const Hero = props => {
 
   return (
     <section
-      className="relative h-[560px] mt-24 w-full mx-auto max-w-[400px] pt-[7.25rem] px-8
-      bg-[rgba(0,0,0,.35)] md:max-w-[689px] lg:max-w-[1110px]"
+      className="relative h-[560px] mt-24 mb-20 pt-[7.25rem] px-8
+      bg-[rgba(0,0,0,.35)] container--small"
     >
       <HeroContext heading={data.heading} text={data.text} />
       <HeroImage
