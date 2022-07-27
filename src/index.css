@@ -41,3 +41,17 @@
     width: 1110px;
   }
 }
+
+.active {
+  text-decoration: underline;
+}
+
+.current-btn {
+  background-color: #1b1d23 !important;
+  color: #fff !important;
+}
+
+.text-shadow {
+  text-shadow: #000 2px 2px, #000 0px -1px, #000 2px 0 10px,
+    #000 -2px 0 10px;
+}
