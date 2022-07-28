@@ -34,13 +34,7 @@
 
 .container--small {
   margin-inline: auto;
-  width: min(100%, 500px);
-}
-
-@media (min-width: 768px) {
-  .container--small {
-    width: 689px;
-  }
+  width: min(100%, 689px);
 }
 
 @media (min-width: 1440px) {
@@ -52,6 +46,7 @@
 
 .active {
   text-decoration: underline;
+  color: #1b1d23;
 }
 
 .text-shadow {

@@ -8,13 +8,18 @@ const FeaturedCard = props => {
   const handleCardClick = e => {
     linkRef.current.click();
   };
+
+  const handleKeyDown = e => {
+    e.key === 'Enter' && handleCardClick();
+  };
   return (
     <div
       className="relative mb-6 h-[240px] text-white duration-[400ms]
       bg-gradient-to-b from-[rgba(0,0,0,.01%)] to-[rgba(0,0,0,49.9%)]
       cursor-pointer focus:text-black-custom hover:text-black-custom
-      focus:bg-white hover:bg-[rgba(255,255,255,.75)]"
+      focus:bg-[rgba(255,255,255,.75)] hover:bg-[rgba(255,255,255,.75)]"
       onClick={handleCardClick}
+      onKeyDown={handleKeyDown}
       tabIndex="0"
     >
       <div className="absolute left-6 bottom-6">

@@ -6,7 +6,7 @@ const AboutUsImage = props => {
         srcSet="./home/desktop/image-small-team.jpg"
       />
       <source
-        media="(min-width: 768px)"
+        media="(min-width: 500px)"
         srcSet="./home/tablet/image-small-team.jpg"
       />
       <img
