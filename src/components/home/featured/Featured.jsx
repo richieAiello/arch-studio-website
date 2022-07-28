@@ -1,5 +1,5 @@
 import FeaturedCard from './FeaturedCard';
-import ArrowLink from '../shared/ArrowLink';
+import ArrowLink from '../../shared/ArrowLink';
 
 const Featured = props => {
   return (
