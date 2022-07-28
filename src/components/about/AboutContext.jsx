@@ -1,10 +1,7 @@
 const AboutContext = props => {
   return (
     <section className="container accent mb-28">
-      <h2
-        className="capitalize font-bold text-black-custom text-[3rem] leading-[3.25rem] -tracking-[1.71px]
-        mb-[1.375rem] max-w-[8ch]"
-      >
+      <h2 className="heading capitalize text-black-custom mb-[1.375rem] max-w-[8ch]">
         Our Heritage
       </h2>
       <p className="text-grey-dark-custom mb-6">

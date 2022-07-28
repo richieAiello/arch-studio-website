@@ -18,9 +18,7 @@ const PortfolioCard = props => {
       hover:bg-[rgba(255,255,255,.75)] focus:bg-[rgba(255,255,255,.75)]"
     >
       <div className="absolute left-6 bottom-6">
-        <h2 className="capitalize font-bold text-[2rem] leading-10">
-          {props.heading}
-        </h2>
+        <h2 className="heading--sub capitalize">{props.heading}</h2>
         <p className="capitalize opacity-75">{props.text}</p>
         <a
           href={props.link}

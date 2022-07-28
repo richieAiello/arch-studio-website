@@ -4,7 +4,7 @@ import ArrowLink from '../../shared/ArrowLink';
 const Featured = props => {
   return (
     <section className="container mb-[8.25rem]">
-      <h2 className="font-bold text-black-custom mb-[2.625rem] text-[3rem] leading-[3.25rem] tracking-[-1.71px]">
+      <h2 className="heading text-black-custom mb-[2.625rem]">
         Featured
       </h2>
       <FeaturedCard

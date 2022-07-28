@@ -1,10 +1,7 @@
 const HomeContext = props => {
   return (
     <section className="container accent relative mb-28">
-      <h2
-        className="font-bold pt-[4.25rem] mb-[1.375rem] text-[3rem] leading-[3.25rem] tracking-[-1.71px]
-        max-w-[10ch]"
-      >
+      <h2 className="heading pt-[4.25rem] mb-[1.375rem] max-w-[10ch]">
         Welcome to Arch Studio
       </h2>
       <p className="mb-5 text-grey-dark-custom">
