@@ -24,9 +24,7 @@ const FeaturedCard = props => {
       role="link"
     >
       <div className="absolute left-6 bottom-6">
-        <h3 className="font-bold text-[2rem] leading-10">
-          {props.heading}
-        </h3>
+        <h3 className="heading--sub">{props.heading}</h3>
         <p className="opacity-75">View All Projects</p>
         <Link
           to="portfolio"

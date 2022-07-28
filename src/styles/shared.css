@@ -1,0 +1,19 @@
+.accent::before {
+  content: '';
+  display: block;
+  width: 65px;
+  height: 1px;
+  background-color: #c8ccd8;
+  margin-bottom: 4.25rem;
+}
+
+@media (min-width: 768px) {
+  .accent-hero::before {
+    content: '';
+    display: block;
+    width: 65px;
+    height: 1px;
+    background-color: #c8ccd8;
+    margin-bottom: 4.5rem;
+  }
+}
