@@ -1,5 +1,14 @@
+import Grid from '../components/portfolio/Grid';
+
 const Portfolio = props => {
-  return null;
+  return (
+    <main>
+      <section>
+        <h1 className="ninja">Arch Studio's Portfolio</h1>
+        <Grid />
+      </section>
+    </main>
+  );
 };
 
 export default Portfolio;
