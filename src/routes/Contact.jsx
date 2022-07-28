@@ -1,4 +1,5 @@
 import SharedHero from '../components/shared/SharedHero';
+import ContactContext from '../components/contact/ContactContext';
 
 const Contact = props => {
   return (
@@ -10,6 +11,7 @@ const Contact = props => {
           yourself nearby, come say hello!"
         mod="contact"
       />
+      <ContactContext />
     </main>
   );
 };
