@@ -1,11 +1,11 @@
-import Grid from '../components/portfolio/Grid';
+import PortfolioGrid from '../components/portfolio/PortfolioGrid';
 
 const Portfolio = props => {
   return (
     <main>
-      <section>
+      <section className="container">
         <h1 className="ninja">Arch Studio's Portfolio</h1>
-        <Grid />
+        <PortfolioGrid />
       </section>
     </main>
   );
