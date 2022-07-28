@@ -1,4 +1,4 @@
-import ArrowLink from '../shared/ArrowLink';
+import ArrowLink from '../../shared/ArrowLink';
 import AboutUsImage from './AboutUsImage';
 
 const AboutUs = props => {

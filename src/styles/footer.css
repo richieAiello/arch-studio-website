@@ -1,0 +1,13 @@
+.logo {
+  transform: scale(0.6);
+}
+
+.logo path {
+  fill: #fff;
+}
+
+@media (min-width: 1440px) {
+  .logo {
+    transform: scale(1);
+  }
+}
