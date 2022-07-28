@@ -13,7 +13,7 @@ const AboutUs = props => {
       >
         Small team, big ideas
       </h2>
-      <ArrowLink path="about" label="Learn about Arch Studio.">
+      <ArrowLink path="about" className="w-[187px] pl-[2.1875rem]">
         About Us
       </ArrowLink>
       <AboutUsImage />

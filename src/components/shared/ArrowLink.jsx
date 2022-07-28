@@ -5,8 +5,11 @@ const ArrowLink = props => {
   return (
     <Link
       to={props.path}
-      className="bg-black-custom text-white flex items-center pl-9 pr-8 pt-6 pb-5 
-      w-max duration-[400ms] hover:bg-grey-dark-custom focus:bg-grey-dark-custom"
+      className={`
+        bg-black-custom text-white flex items-center min-w-max  pt-[1.5625rem] pb-[1.375rem]
+        duration-[400ms] hover:bg-grey-dark-custom focus:bg-grey-dark-custom
+        ${props.className}
+      `}
       aria-label={props.label}
     >
       {props.children}

@@ -9,7 +9,12 @@ const HeroContext = props => {
       <p className="mb-16 text-shadow text-[1.5rem] tracking-tight">
         {props.text}
       </p>
-      <ArrowLink path="portfolio">View Our Portfolio</ArrowLink>
+      <ArrowLink
+        path="portfolio"
+        className="pl-[2.3125rem] w-[min(100%,252px)]"
+      >
+        See Our Portfolio
+      </ArrowLink>
     </div>
   );
 };
