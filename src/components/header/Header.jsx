@@ -1,7 +1,9 @@
+import Nav from './Nav';
+
 const Header = props => {
   return (
-    <header>
-      <h1 className="text-blue-500">Is Tailwind Working?</h1>
+    <header className="fixed z-50 h-24 w-full flex items-center bg-white">
+      <Nav />
     </header>
   );
 };

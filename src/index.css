@@ -32,12 +32,24 @@
   width: min(100% - 4rem, 689px);
 }
 
-@media (min-width: 768px) {
+.container--small {
+  margin-inline: auto;
+  width: min(100%, 689px);
 }
 
 @media (min-width: 1440px) {
-  .container {
-    margin-inline: auto;
+  .container,
+  .container--small {
     width: 1110px;
   }
+}
+
+.active {
+  text-decoration: underline;
+  color: #1b1d23;
+}
+
+.text-shadow {
+  text-shadow: #000 2px 2px, #000 0px -1px, #000 2px 0 10px,
+    #000 -2px 0 10px;
 }
