@@ -1,5 +1,6 @@
 import SharedHero from '../components/shared/SharedHero';
 import AboutContext from '../components/about/AboutContext';
+import Leaders from '../components/about/leaders/Leaders';
 
 const About = props => {
   return (
@@ -13,6 +14,7 @@ const About = props => {
         mod="about"
       />
       <AboutContext />
+      <Leaders />
     </main>
   );
 };
