@@ -18,14 +18,14 @@ const ContactForm = props => {
         validationSchema={Yup.object({
           fullName: Yup.string()
             .matches(/^[a-z ,.'-]+$/i, 'Letters only')
-            .max(20, 'Must be 20 characters or less')
-            .required('Required'),
+            .max(24, 'Must be 24 characters or less')
+            .required('Name required.'),
           email: Yup.string()
             .email('Invalid email')
-            .required('Required'),
+            .required('Email required.'),
           message: Yup.string()
             .max(200, 'Must be 200 characters or less.')
-            .required('Required'),
+            .required('Message required.'),
         })}
         onSubmit={(values, { setSubmitting }) => {
           setTimeout(() => {
