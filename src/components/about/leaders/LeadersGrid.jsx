@@ -2,7 +2,7 @@ import LeadersCard from './LeadersCard';
 
 const LeadersGrid = props => {
   return (
-    <div className="grid gap-y-20 mx-auto w-max">
+    <div className="grid gap-y-20 mx-auto max-w-max">
       <LeadersCard
         image="jake"
         heading="Jake Richards"

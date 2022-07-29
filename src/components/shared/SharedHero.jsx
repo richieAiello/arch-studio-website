@@ -27,9 +27,9 @@ const SharedHero = props => {
       <span
         aria-hidden
         className="hidden md:block absolute right-0 top-[204px] text-silver-custom
-        font-bold text-[7.5rem] leading-[12.5rem] -tracking-[3px]"
+        capitalize font-bold text-[7.5rem] leading-[12.5rem] -tracking-[3px]"
       >
-        {props.flavor}
+        {props.mod}
       </span>
     </section>
   );
