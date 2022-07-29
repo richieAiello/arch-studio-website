@@ -1,5 +1,7 @@
 import SharedHero from '../components/shared/SharedHero';
 import ContactContext from '../components/contact/ContactContext';
+import ContactMap from '../components/contact/ContactMap';
+import ContactForm from '../components/contact/ContactForm';
 
 const Contact = props => {
   return (
@@ -12,6 +14,8 @@ const Contact = props => {
         mod="contact"
       />
       <ContactContext />
+      <ContactMap />
+      <ContactForm />
     </main>
   );
 };
