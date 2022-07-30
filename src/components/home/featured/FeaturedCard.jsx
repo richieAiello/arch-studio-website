@@ -23,7 +23,7 @@ const FeaturedCard = props => {
       tabIndex="0"
       role="link"
     >
-      <div className="absolute left-6 bottom-6">
+      <div className="absolute left-6 bottom-6 md:left-10 md:bottom-10">
         <h3 className="heading--sub">{props.heading}</h3>
         <p className="opacity-75">View All Projects</p>
         <Link
@@ -33,7 +33,9 @@ const FeaturedCard = props => {
           className="ninja"
         />
       </div>
-      <span className="hidden absolute md:block">{props.text}</span>
+      <span className="hidden absolute right-4 bottom-24 font-bold text-[250px] text-white opacity-50 md:block ">
+        {props.text}
+      </span>
       <FeaturedCardImage image={props.image} />
     </div>
   );

@@ -17,7 +17,7 @@ const PortfolioCard = props => {
       text-white duration-[400ms] hover:text-black-custom focus:text-black-custom 
       hover:bg-[rgba(255,255,255,.75)] focus:bg-[rgba(255,255,255,.75)]"
     >
-      <div className="absolute left-6 bottom-6">
+      <div className="absolute left-6 bottom-6 md:left-10 md:bottom-10">
         <h2 className="heading--sub capitalize">{props.heading}</h2>
         <p className="capitalize opacity-75">{props.text}</p>
         <a

@@ -6,7 +6,7 @@ const HeroImage = props => {
       <img
         src={props.mobile}
         alt=""
-        className="absolute h-full w-full object-cover object-bottom -z-10 top-0 left-0"
+        className="absolute h-full w-full object-cover -z-10 top-0 left-0"
       />
     </picture>
   );

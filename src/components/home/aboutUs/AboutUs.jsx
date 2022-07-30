@@ -5,7 +5,7 @@ const AboutUs = props => {
   return (
     <section
       className="container--small relative flex flex-col justify-center pl-8 h-[560px] 
-      bg-[rgba(0,0,0,.5)] mb-[4.5rem]"
+      bg-[rgba(0,0,0,.5)] mb-[4.5rem] md:mb-[12.5rem] md:pl-[3.625rem]"
     >
       <h2 className="heading text-white max-w-[10ch] mb-6">
         Small team, big ideas

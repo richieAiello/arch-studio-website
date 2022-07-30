@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import Hamburger from './Hamburger';
 import NavMenu from './NavMenu';
 import NavShadow from './NavShadow';
@@ -10,6 +11,8 @@ const Nav = props => {
   const [animateOut, setAnimateOut] = useState(false);
   const [hidden, setHidden] = useState(true);
   const [loading, setLoading] = useState(false);
+
+  let location = useLocation().pathname;
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -36,7 +39,7 @@ const Nav = props => {
   };
 
   return (
-    <nav className="container flex justify-between items-center">
+    <nav className="container--small flex justify-between items-center px-8 md:p-0">
       <img
         src="./logo.svg"
         alt="Arch Studio Logo"
@@ -67,6 +70,14 @@ const Nav = props => {
         })}
         onClick={handleHamburgerClick}
       />
+      <div className="hidden accent--page">
+        <span className="text-grey-light-custom uppercase">
+          {location === '/' && 'Home'}
+          {location === '/portfolio' && 'Portfolio'}
+          {location === '/about' && 'About Us'}
+          {location === '/contact' && 'Contact'}
+        </span>
+      </div>
     </nav>
   );
 };
