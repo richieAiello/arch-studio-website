@@ -2,7 +2,7 @@ import { ReactComponent as Arrow } from '../../assets/arrow-dark.svg';
 
 const ContactAddress = props => {
   return (
-    <div className="text-grey-dark-custom mt-10">
+    <div className="text-grey-dark-custom mt-10 md:mt-[2.625rem]">
       <h3 className="capitalize font-bold leading-[2.1875rem] mb-[0.875rem]">
         {props.heading}
       </h3>
