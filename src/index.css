@@ -37,6 +37,13 @@
   width: min(100%, 573px);
 }
 
+@media (min-width: 768px) {
+  .container--header {
+    margin-inline: auto;
+    width: 573px;
+  }
+}
+
 @media (min-width: 1440px) {
   .container,
   .container--small {
@@ -99,13 +106,17 @@
   }
 }
 
-.accent::before {
+.accent::before,
+.accent--secondary::before {
   content: '';
-  display: block;
   width: 65px;
   height: 1px;
   background-color: #c8ccd8;
   margin-bottom: 4.25rem;
+}
+
+.accent::before {
+  display: block;
 }
 
 @media (min-width: 768px) {
@@ -113,13 +124,39 @@
     display: none;
   }
 
-  .accent--secondary::before {
+  .accent--secondary::before,
+  .accennt--page::before {
+    display: block;
+  }
+
+  .accent--page {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: -35px;
+    top: 0;
+    letter-spacing: 18px;
+    transform-origin: 0 0;
+    transform: rotate(90deg);
+
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+  }
+
+  .accent--page::before {
     content: '';
     display: block;
-    width: 65px;
+    width: 104px;
     height: 1px;
     background-color: #c8ccd8;
-    margin-bottom: 4.5rem;
+    margin-right: 3rem;
   }
 }
 

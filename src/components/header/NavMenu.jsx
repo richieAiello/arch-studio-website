@@ -4,8 +4,7 @@ const NavMenu = props => {
   return (
     <ul
       className={`
-        w-screen absolute top-24 left-0 bg-silver-custom py-10 pl-8
-        gap-y-4 z-10
+        w-screen absolute top-24 left-0 bg-silver-custom py-10 pl-8 gap-y-4 z-10
         ${props.className}
         md:grid md:grid-flow-col md:gap-x-12 md:h-max md:w-max md:static md:p-0 md:bg-white
       `}
