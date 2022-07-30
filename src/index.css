@@ -37,8 +37,14 @@
   width: min(100%, 573px);
 }
 
+.container--leaders {
+  margin-inline: auto;
+  width: min(100% - 4rem, 311px);
+}
+
 @media (min-width: 768px) {
-  .container--header {
+  .container--header,
+  .container--leaders {
     margin-inline: auto;
     width: 573px;
   }
