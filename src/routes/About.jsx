@@ -4,13 +4,14 @@ import Leaders from '../components/about/leaders/Leaders';
 
 const About = props => {
   return (
-    <main className="mt-24">
+    <main className="mt-24 md:mt-0">
       <SharedHero
         heading="Your team of professionals"
         text="Our small team of world-class professionals will work with you every step of the way. 
           Strong relationships are at the core of everything we do. This extends to the 
           relationship our projects have with their surroundings."
         mod="about"
+        flavor="About"
       />
       <AboutContext />
       <Leaders />
