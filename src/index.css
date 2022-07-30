@@ -108,16 +108,18 @@
 }
 
 .accent::before,
+.accent--hero::before,
 .accent--secondary::before {
   content: '';
   width: 65px;
   height: 2px;
   background-color: #c8ccd8;
-  margin-bottom: 4.25rem;
 }
 
-.accent::before {
+.accent::before,
+.accent--secondary::before {
   display: block;
+  margin-bottom: 4.25rem;
 }
 
 @media (min-width: 768px) {
@@ -125,9 +127,17 @@
     display: none;
   }
 
-  .accent--secondary::before,
+  .accent--hero::before,
   .accennt--page::before {
     display: block;
+  }
+
+  .accent--hero::before {
+    margin-bottom: 4.5rem;
+  }
+
+  .accent--secondary::before {
+    margin-bottom: 3rem;
   }
 
   .accent--page {
