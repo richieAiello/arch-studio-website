@@ -5,8 +5,11 @@ import arrow from '../../assets/arrow.svg';
 
 const ContactForm = props => {
   return (
-    <section className="container mb-[13.25rem]">
-      <h2 className="text-black-custom heading max-w-[8ch] mb-[2.625rem]">
+    <section className="container mb-[13.25rem] md:mb-[17.5rem]">
+      <h2
+        className="text-black-custom heading max-w-[8ch] mb-[2.625rem] 
+      md:max-w-none md:mb-[3.75rem]"
+      >
         Connect with us
       </h2>
       <Formik
