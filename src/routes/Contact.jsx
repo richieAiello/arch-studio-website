@@ -71,7 +71,7 @@ const Contact = props => {
           }}
         />
       </ContactContext>
-      <div ref={mapContainerRef} className=" scroll-mt-24">
+      <div ref={mapContainerRef} className=" scroll-mt-24 ">
         <ContactMap ref={mapRef}>
           <Marker
             ref={markerOneRef}
