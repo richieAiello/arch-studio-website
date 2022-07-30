@@ -1,7 +1,9 @@
+import FlavorText from '../shared/FlavorText';
+
 const HomeContext = props => {
   return (
-    <section className="container accent relative mb-28">
-      <h2 className="heading pt-[4.25rem] mb-[1.375rem] max-w-[10ch]">
+    <section className="container accent relative mb-28 md:mb-[14.75rem]">
+      <h2 className="heading mb-[1.375rem] max-w-[10ch] md:mb-[2.6875rem]">
         Welcome to Arch Studio
       </h2>
       <p className="mb-5 text-grey-dark-custom">
@@ -21,12 +23,7 @@ const HomeContext = props => {
         the surrounding area to create truly stunning projects that
         will stand the test of time.
       </p>
-      <span
-        className="hidden absolute left-0 top-0 md:block"
-        aria-hidden
-      >
-        Welcome
-      </span>
+      <FlavorText text="Welcome" className="-top-16" />
     </section>
   );
 };

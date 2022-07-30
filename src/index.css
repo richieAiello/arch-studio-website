@@ -12,7 +12,7 @@
 }
 
 /***********************************************
-  Base Styles
+  Base/Global Styles
 ***********************************************/
 #root {
   min-height: 100vh;
@@ -29,12 +29,12 @@
 
 .container {
   margin-inline: auto;
-  width: min(100% - 4rem, 689px);
+  width: min(100% - 4rem, 573px);
 }
 
 .container--small {
   margin-inline: auto;
-  width: min(100%, 689px);
+  width: min(100%, 573px);
 }
 
 @media (min-width: 1440px) {
@@ -42,21 +42,6 @@
   .container--small {
     width: 1110px;
   }
-}
-
-.active {
-  text-decoration: underline;
-  color: #1b1d23;
-}
-
-.ninja {
-  clip: rect(1px, 1px, 1px, 1px);
-  clip-path: inset(50%);
-  height: 1px;
-  width: 1px;
-  margin: -1px;
-  overflow: hidden;
-  position: absolute;
 }
 
 .heading {
@@ -77,4 +62,78 @@
   font-weight: 700;
   font-size: 2rem;
   line-height: 2.5rem;
+}
+
+.heading--flavor {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .heading {
+    font-size: 4.5rem;
+    line-height: 4rem;
+    letter-spacing: -2px;
+  }
+
+  .heading--hero {
+    font-size: 6rem;
+    line-height: 5rem;
+    letter-spacing: -2px;
+  }
+
+  .heading--flavor {
+    position: absolute;
+    display: block;
+    text-transform: capitalize;
+    color: #eeeff4;
+    font-weight: 700;
+    font-size: 7.5rem;
+    letter-spacing: -3px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .heading--flavor {
+    font-size: 15.625rem;
+    letter-spacing: -5px;
+  }
+}
+
+.accent::before {
+  content: '';
+  display: block;
+  width: 65px;
+  height: 1px;
+  background-color: #c8ccd8;
+  margin-bottom: 4.25rem;
+}
+
+@media (min-width: 768px) {
+  .accent::before {
+    display: none;
+  }
+
+  .accent--secondary::before {
+    content: '';
+    display: block;
+    width: 65px;
+    height: 1px;
+    background-color: #c8ccd8;
+    margin-bottom: 4.5rem;
+  }
+}
+
+.active {
+  text-decoration: underline;
+  color: #1b1d23;
+}
+
+.ninja {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  overflow: hidden;
+  position: absolute;
 }

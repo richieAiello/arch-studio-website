@@ -24,10 +24,10 @@ const Hero = props => {
 
   return (
     <section
-      className="relative h-[560px] mt-24 mb-20 pt-[7.25rem] px-8
-      bg-[rgba(0,0,0,.35)] container--small"
+      className="relative h-[560px] mt-24 mb-20 pt-[7.25rem] pl-8
+      bg-[rgba(0,0,0,.35)] container--small md:mb-[15.5rem] md:h-[720px] md:pt-[11.625rem] md:pl-[3.625rem]"
     >
-      <HeroContext heading={data.heading} text={data.text} />
+      <HeroContext heading={data.heading} />
       <HeroImage
         mobile={data.mobile}
         tablet={data.tablet}

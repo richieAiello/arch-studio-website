@@ -7,17 +7,3 @@
   background-color: #1b1d23 !important;
   color: #fff !important;
 }
-
-.accent::before {
-  content: '';
-  display: block;
-  width: 65px;
-  height: 1px;
-  background-color: #c8ccd8;
-}
-
-@media (min-width: 768px) {
-  .accent::before {
-    display: none;
-  }
-}

@@ -1,9 +1,7 @@
-import '../../styles/shared.css';
-
 const SharedHero = props => {
   return (
     <section className="container--small relative h-[240px] w-full mb-[365px]">
-      <div className="accent-hero absolute bg-white max-w-[343px] h-max left-0 top-[195px] pl-8 pr-4 pt-16 sm:pr-0">
+      <div className="accent--secondary absolute bg-white max-w-[343px] h-max left-0 top-[195px] pl-8 pr-4 pt-16 sm:pr-0">
         <h1 className="heading text-black-custom mb-5">
           {props.heading}
         </h1>
