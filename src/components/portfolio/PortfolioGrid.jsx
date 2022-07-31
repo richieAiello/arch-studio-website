@@ -2,7 +2,10 @@ import PortfolioCard from './PortfolioCard';
 
 const PortfolioGrid = props => {
   return (
-    <div className="grid gap-y-6 mt-[9.5rem] mb-[8.25rem] md:mt-0 md:mb-[12.5rem]">
+    <div
+      className="grid gap-y-6 mt-[9.5rem] mb-[8.25rem] md:mt-0 md:mb-[12.5rem]
+      lg:grid-cols-[1fr,1fr,1fr] lg:gap-y-8 lg:gap-x-[1.875rem] lg:mb-[10rem]"
+    >
       <PortfolioCard
         heading="Seraph Station"
         text="September 2019"
