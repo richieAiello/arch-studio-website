@@ -196,4 +196,8 @@
   .accent--page {
     left: -78px;
   }
+
+  .accent--secondary::before {
+    margin-bottom: 5.125rem;
+  }
 }
