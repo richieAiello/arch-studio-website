@@ -25,7 +25,8 @@ const Hero = props => {
   return (
     <section
       className="relative h-[560px] mt-24 mb-20 pt-[7.25rem] pl-8 bg-[rgba(0,0,0,.35)] 
-      container--small md:mb-[15.5rem] md:h-[720px] md:pt-[11.625rem] md:pl-[3.625rem] md:mt-0"
+      container--small md:mb-[15.5rem] md:h-[720px] md:pt-[11.625rem] md:pl-[3.625rem] md:mt-0
+      lg:pl-[11.875rem] lg:pt-[11.625rem] lg:mb-[12.1875rem]"
     >
       <HeroContext heading={data.heading} />
       <HeroImage

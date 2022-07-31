@@ -17,7 +17,8 @@ const FeaturedCard = props => {
       className="relative mb-6 h-[240px] text-white duration-[400ms]
       bg-gradient-to-b from-[rgba(0,0,0,.01%)] to-[rgba(0,0,0,49.9%)]
       cursor-pointer focus:text-black-custom hover:text-black-custom
-      focus:bg-[rgba(255,255,255,.75)] hover:bg-[rgba(255,255,255,.75)]"
+      focus:bg-[rgba(255,255,255,.75)] hover:bg-[rgba(255,255,255,.75)]
+      lg:h-[560px]"
       onClick={handleCardClick}
       onKeyDown={handleKeyDown}
       tabIndex="0"
@@ -33,7 +34,10 @@ const FeaturedCard = props => {
           className="ninja"
         />
       </div>
-      <span className="hidden absolute right-4 bottom-24 font-bold text-[250px] text-white opacity-50 md:block ">
+      <span
+        className="hidden absolute right-4 bottom-24 font-bold text-[250px] text-white opacity-50
+        md:block lg:top-32 lg:-right-4"
+      >
         {props.text}
       </span>
       <FeaturedCardImage image={props.image} />

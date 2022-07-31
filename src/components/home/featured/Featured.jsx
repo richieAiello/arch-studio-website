@@ -4,10 +4,10 @@ import ArrowLink from '../../shared/ArrowLink';
 const Featured = props => {
   return (
     <section className="container mb-[8.25rem] md:grid md:grid-rows-[auto,auto] md:grid-cols-2 md:mb-[12.5rem]">
-      <h2 className="heading text-black-custom mb-[2.625rem] md:mb-[5.375rem]">
+      <h2 className="heading text-black-custom mb-[2.625rem] md:mb-[5.375rem] lg:mb-16">
         Featured
       </h2>
-      <div className=" row-start-2 col-span-2">
+      <div className=" row-start-2 col-span-2 lg:grid lg:grid-flow-col lg:gap-x-[1.875rem]">
         <FeaturedCard
           heading="Project Del Sol"
           text="1"
