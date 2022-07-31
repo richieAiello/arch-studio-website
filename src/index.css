@@ -27,6 +27,21 @@
   line-height: 1.5rem;
 }
 
+.active {
+  text-decoration: underline;
+  color: #1b1d23;
+}
+
+.ninja {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  overflow: hidden;
+  position: absolute;
+}
+
 .container {
   margin-inline: auto;
   width: min(100% - 4rem, 573px);
@@ -91,7 +106,7 @@
 
   .heading--hero {
     font-size: 6rem;
-    line-height: 5rem;
+    line-height: 5.5rem;
     letter-spacing: -2px;
   }
 
@@ -177,17 +192,8 @@
   }
 }
 
-.active {
-  text-decoration: underline;
-  color: #1b1d23;
-}
-
-.ninja {
-  clip: rect(1px, 1px, 1px, 1px);
-  clip-path: inset(50%);
-  height: 1px;
-  width: 1px;
-  margin: -1px;
-  overflow: hidden;
-  position: absolute;
+@media (min-width: 1440px) {
+  .accent--page {
+    left: -78px;
+  }
 }
