@@ -14,7 +14,7 @@ const PortfolioCard = props => {
       tabIndex="0"
       role="link"
       className="relative h-[240px] w-full bg-gradient-to-b from-[rgba(0,0,0,0)] to-[rgba(0,0,0,.5)]
-      text-white duration-[400ms] hover:text-black-custom focus:text-black-custom 
+      text-white duration-[400ms] hover:text-black-custom focus:text-black-custom cursor-pointer 
       hover:bg-[rgba(255,255,255,.75)] focus:bg-[rgba(255,255,255,.75)] lg:h-[560px]"
     >
       <div className="absolute left-6 bottom-6 md:left-10 md:bottom-10">

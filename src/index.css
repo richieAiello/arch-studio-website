@@ -203,3 +203,23 @@
     margin-bottom: 5.125rem;
   }
 }
+
+.icon {
+  display: inline;
+  width: 2rem;
+  cursor: pointer;
+}
+
+.icon path {
+  transition: all 250ms;
+}
+
+.twitter:hover path,
+.twitter:focus path {
+  fill: #1da1f2;
+}
+
+.linkedin:hover path,
+.linkedin:focus path {
+  fill: #0072b1;
+}
