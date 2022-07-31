@@ -12,7 +12,7 @@ const ContactMap = (props, ref) => {
       scrollWheelZoom={false}
       touchZoom={false}
       dragging={false}
-      className="relative z-0 container--small h-[367px] mb-[4.5rem] md:h-[560px] md:mb-[12.5rem]"
+      className="relative z-0 container--small h-[367px] mb-[4.5rem] md:h-[560px] md:mb-[12.5rem] lg:mb-40"
       ref={ref}
       doubleClickZoom={false}
     >
