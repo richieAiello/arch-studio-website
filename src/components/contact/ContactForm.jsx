@@ -1,9 +1,15 @@
+import { useState } from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import '../../styles/form.css';
 import arrow from '../../assets/arrow.svg';
+import clsx from 'clsx';
 
 const ContactForm = props => {
+  const [nameError, setNameError] = useState(false);
+  const [emailError, setEmailError] = useState(false);
+  const [msgError, setMsgError] = useState(false);
+
   return (
     <section className="container mb-[13.25rem] md:mb-[17.5rem] lg:mb-[15rem] lg:grid lg:grid-cols-[auto,730px]">
       <h2
@@ -48,9 +54,11 @@ const ContactForm = props => {
               placeholder="Name"
               className="form__input"
             />
-            <ErrorMessage name="fullName">
-              {msg => <div className="form__error">{msg}</div>}
-            </ErrorMessage>
+            <div style={{ color: 'red' }}>
+              <ErrorMessage name="fullName">
+                {msg => <div className="form__error">{msg}</div>}
+              </ErrorMessage>
+            </div>
           </div>
           <div className="form__wrapper">
             <label htmlFor="email" className="ninja">
