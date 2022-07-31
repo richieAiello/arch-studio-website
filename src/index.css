@@ -68,7 +68,8 @@
 @media (min-width: 1440px) {
   .container,
   .container--header,
-  .container--small {
+  .container--small,
+  .container--leaders {
     width: 1110px;
   }
 }
