@@ -5,7 +5,7 @@ import arrow from '../../assets/arrow.svg';
 
 const ContactForm = props => {
   return (
-    <section className="container mb-[13.25rem] md:mb-[17.5rem]">
+    <section className="container mb-[13.25rem] md:mb-[17.5rem] lg:mb-[15rem] lg:grid lg:grid-cols-[auto,730px]">
       <h2
         className="text-black-custom heading max-w-[8ch] mb-[2.625rem] 
       md:max-w-none md:mb-[3.75rem]"

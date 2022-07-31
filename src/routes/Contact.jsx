@@ -71,7 +71,7 @@ const Contact = props => {
           }}
         />
       </ContactContext>
-      <div ref={mapContainerRef} className=" scroll-mt-24 ">
+      <div ref={mapContainerRef} className="scroll-mt-24 ">
         <ContactMap ref={mapRef}>
           <Marker
             ref={markerOneRef}
@@ -102,7 +102,7 @@ const Contact = props => {
                 ),
             }}
           >
-            <Popup className="">
+            <Popup>
               <p className="text-center font-bold">Office II</p>
               <p className="text-center">3399 Wines Lane, TX</p>
             </Popup>
