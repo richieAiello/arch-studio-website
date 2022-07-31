@@ -68,7 +68,8 @@
 @media (min-width: 1440px) {
   .container,
   .container--header,
-  .container--small {
+  .container--small,
+  .container--leaders {
     width: 1110px;
   }
 }
@@ -195,5 +196,9 @@
 @media (min-width: 1440px) {
   .accent--page {
     left: -78px;
+  }
+
+  .accent--secondary::before {
+    margin-bottom: 5.125rem;
   }
 }
