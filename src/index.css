@@ -199,6 +199,7 @@
   }
 
   .accent--secondary::before {
+    grid-column-start: 1;
     margin-bottom: 5.125rem;
   }
 }
