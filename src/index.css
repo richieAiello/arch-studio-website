@@ -36,6 +36,8 @@
 /***********************************************
   Base/Global Styles
 ***********************************************/
+/* Keeps footer at bottom of page on zoom-out. */
+/* Footer gets margin-top: auto. */
 #root {
   min-height: 100vh;
   display: flex;

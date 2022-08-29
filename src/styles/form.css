@@ -5,30 +5,18 @@
 }
 
 .form__wrapper {
-  position: relative;
-  height: 42px;
   margin-bottom: 2.6875rem;
-}
-
-.form__wrapper--message {
-  position: relative;
-  height: 92px;
 }
 
 .form__input,
 .form__input--message {
   color: #1b1d23;
   width: 100%;
-  height: 100%;
   border-bottom: 1px solid #1b1d23;
   font-size: 1.25rem;
   line-height: 1.15rem;
   letter-spacing: -0.31px;
-  padding-left: 2rem;
-}
-
-.form__input {
-  padding-bottom: 1.25rem;
+  padding: 0 1rem 1.5rem 1rem;
 }
 
 .form__input--message {
@@ -37,29 +25,48 @@
 
 .form__input::placeholder,
 .form__input--message::placeholder {
+  padding-left: 1rem;
   color: #c8ccd8;
 }
 
-.form__error {
+.form__input--error {
+  color: #df5656;
+  border-color: #df5656;
+}
+
+.form__input--error::placeholder {
+  color: rgba(223, 86, 86, 75%);
+}
+
+.form__error,
+.form__error--message {
+  position: absolute;
   font-size: 1.125rem;
   line-height: 1.035rem;
   letter-spacing: -0.28px;
   color: #df5656;
-  position: absolute;
-  right: 0;
-  bottom: 0.5rem;
+}
+
+.form__error {
+  padding-top: 0.75rem;
+}
+
+.form__error--message {
+  margin-right: 6rem;
+  padding-top: 0.3rem;
 }
 
 .form__submit {
   position: absolute;
   right: 0;
+  bottom: -4.5rem;
   height: 5rem;
   width: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #1b1d23 !important;
-  transition: all 250ms;
+  transition: all 300ms;
 }
 
 .form__submit:hover,
