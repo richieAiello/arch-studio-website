@@ -5,7 +5,7 @@ import CustomTextArea from './CustomTextArea';
 import '../../styles/form.css';
 import arrow from '../../assets/arrow.svg';
 
-const ContactForm = props => {
+const ContactForm = ({ setState, ...props }) => {
   return (
     <section className="container mb-[13.25rem] md:mb-[17.5rem] lg:mb-[15rem] lg:grid lg:grid-cols-[auto,730px]">
       <h2
@@ -19,7 +19,7 @@ const ContactForm = props => {
         validationSchema={validation}
         onSubmit={(values, { setSubmitting, resetForm }) => {
           setTimeout(() => {
-            alert(JSON.stringify(values, null, 2));
+            setState(false);
             setSubmitting(false);
             resetForm();
           }, 400);

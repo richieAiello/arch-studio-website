@@ -1,12 +1,14 @@
-import { useRef } from 'react';
+import { useState, useRef } from 'react';
 import SharedHero from '../components/shared/SharedHero';
 import ContactContext from '../components/contact/ContactContext';
 import ContactAddress from '../components/contact/ContactAddress';
 import ContactMap from '../components/contact/ContactMap';
 import { Marker, Popup } from 'react-leaflet';
 import ContactForm from '../components/contact/ContactForm';
+import FormValidated from '../components/contact/FormValidated';
 
 const Contact = props => {
+  const [hidden, setHidden] = useState(true);
   const mapRef = useRef(null);
   const markerOneRef = useRef(null);
   const markerTwoRef = useRef(null);
@@ -34,83 +36,88 @@ const Contact = props => {
   };
 
   return (
-    <main className="mt-24 md:mt-0">
-      <SharedHero
-        heading="Tell us about your project"
-        text="We’d love to hear more about your project. Please, leave a message below or give 
+    <>
+      <main className="mt-24 md:mt-0">
+        <SharedHero
+          heading="Tell us about your project"
+          text="We’d love to hear more about your project. Please, leave a message below or give 
           us a call. We have two offices, one in Texas and one in Tennessee. If you find 
           yourself nearby, come say hello!"
-        mod="contact"
-        flavor="Contact"
-      />
-      <ContactContext>
-        <ContactAddress
-          heading="Main Office"
-          mail="archone@mail.com"
-          address="1892 Chenoweth Drive TN"
-          phone="123-456-3451"
-          onClick={e =>
-            handleViewClick(
-              e,
-              markerOnePosition,
-              markerOneRef.current
-            )
-          }
+          mod="contact"
+          flavor="Contact"
         />
-        <ContactAddress
-          heading="Office II"
-          mail="archtwo@mail.com"
-          address="3399 Wines Lane TX"
-          phone="832-123-4321"
-          onClick={e => {
-            handleViewClick(
-              e,
-              markerTwoPosition,
-              markerTwoRef.current
-            );
-          }}
-        />
-      </ContactContext>
-      <div ref={mapContainerRef} className="scroll-mt-24 ">
-        <ContactMap ref={mapRef}>
-          <Marker
-            ref={markerOneRef}
-            position={markerOnePosition}
-            eventHandlers={{
-              click: e =>
-                handleViewClick(
-                  e,
-                  markerOnePosition,
-                  markerOneRef.current
-                ),
+        <ContactContext>
+          <ContactAddress
+            heading="Main Office"
+            mail="archone@mail.com"
+            address="1892 Chenoweth Drive TN"
+            phone="123-456-3451"
+            onClick={e =>
+              handleViewClick(
+                e,
+                markerOnePosition,
+                markerOneRef.current
+              )
+            }
+          />
+          <ContactAddress
+            heading="Office II"
+            mail="archtwo@mail.com"
+            address="3399 Wines Lane TX"
+            phone="832-123-4321"
+            onClick={e => {
+              handleViewClick(
+                e,
+                markerTwoPosition,
+                markerTwoRef.current
+              );
             }}
-          >
-            <Popup>
-              <p className="text-center font-bold">Main Office</p>
-              <p className="text-center">1892 Chenoweth Drive, TN</p>
-            </Popup>
-          </Marker>
-          <Marker
-            ref={markerTwoRef}
-            position={markerTwoPosition}
-            eventHandlers={{
-              click: e =>
-                handleViewClick(
-                  e,
-                  markerTwoPosition,
-                  markerTwoRef.current
-                ),
-            }}
-          >
-            <Popup>
-              <p className="text-center font-bold">Office II</p>
-              <p className="text-center">3399 Wines Lane, TX</p>
-            </Popup>
-          </Marker>
-        </ContactMap>
-      </div>
-      <ContactForm />
-    </main>
+          />
+        </ContactContext>
+        <div ref={mapContainerRef} className="scroll-mt-24 ">
+          <ContactMap ref={mapRef}>
+            <Marker
+              ref={markerOneRef}
+              position={markerOnePosition}
+              eventHandlers={{
+                click: e =>
+                  handleViewClick(
+                    e,
+                    markerOnePosition,
+                    markerOneRef.current
+                  ),
+              }}
+            >
+              <Popup>
+                <p className="text-center font-bold">Main Office</p>
+                <p className="text-center">
+                  1892 Chenoweth Drive, TN
+                </p>
+              </Popup>
+            </Marker>
+            <Marker
+              ref={markerTwoRef}
+              position={markerTwoPosition}
+              eventHandlers={{
+                click: e =>
+                  handleViewClick(
+                    e,
+                    markerTwoPosition,
+                    markerTwoRef.current
+                  ),
+              }}
+            >
+              <Popup>
+                <p className="text-center font-bold">Office II</p>
+                <p className="text-center">3399 Wines Lane, TX</p>
+              </Popup>
+            </Marker>
+          </ContactMap>
+        </div>
+        <ContactForm setState={setHidden} />
+      </main>
+      {!hidden && <FormValidated setState={setHidden} />}
+    </>
   );
 };
 
