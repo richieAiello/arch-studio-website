@@ -8,8 +8,6 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
-
   /* firefox support */
   scrollbar-color: #1b1d23 #fafafa;
   scrollbar-width: thin;

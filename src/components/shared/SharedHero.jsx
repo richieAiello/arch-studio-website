@@ -5,7 +5,7 @@ const SharedHero = props => {
     <section className="container--small relative mb-[22.8125rem] md:mb-[12.5rem]">
       <div className="bg-[rgba(0,0,0,.35)] h-[240px] w-full md:h-[720px] lg:w-[635px]">
         <div
-          className="accent--hero absolute bg-white max-w-[343px] h-max left-0 top-[195px] pl-8 pr-4 pt-16
+          className="accent--hero absolute bg-red-200 max-w-[343px] left-0 top-[195px] pl-8 pr-4 pt-16
           sm:pr-0 md:right-0 md:bottom-0 md:left-[unset] md:top-[unset] md:max-w-[515px] md:pt-[5.5rem] md:pl-[3.6875rem]
           lg:pt-40 lg:pl-[11.375rem] lg:max-w-[628px]"
         >
